@@ -1,0 +1,139 @@
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.8;
+    background: linear-gradient(135deg, #ff5757, #ffdab9, #b3e6ff);
+  }
+    
+  .circle1 {
+    width: 110px;
+    height: 110px;
+    top: 150px;
+    left: 20px;
+  }
+    
+  .circle2 {
+    width: 250px;
+    height: 250px;
+    bottom: 20px;
+    left: 40px;
+  }
+  
+  .circle3 {
+    width: 180px;
+    height: 180px;
+    bottom: 30px;
+    right: 30px;
+  }
+    
+  .circle4 {
+    width: 400px;
+    height: 400px;
+    right: 400px;
+  }
+  
+  .logo1 {
+    padding-left: 4%;
+  }
+  
+  .logo2 {
+    padding-right: 4%;
+  }
+  
+  .navi {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .navi img {
+    max-height: 70px;
+  }
+  
+  .navi ul {
+    font-size: 16px;
+  }
+  
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-right: 80px;
+  }
+  
+  /* Image Styling */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px; /* Margin around the image */
+    z-index: 2;
+  }
+  
+  /* Text Styling */
+  .highlight-text {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fd6666;
+    text-shadow: rgba(1, 1, 1, 1);
+  }
+  
+  .text h1 {
+    font-size: 30px;
+  }
+  
+  .text span im {
+    font-size: 30px;
+  }
+  
+  .text h3 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  
+  .text p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 0;
+  }
+  
+  body {
+    background-color: #1b1b1b;
+    color: white;
+  }
+  
+  /* Button Styling */
+  .btn-custom {
+    background-color: #ff5757;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin: 15px 0;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff4040;
+  }
+  
+  
+  
+    
