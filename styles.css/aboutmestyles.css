@@ -32,13 +32,24 @@
     height: 400px;
     right: 400px;
 }
+
+.circle5 {
+    width: 450px;
+    height: 450px;
+    right: 450px;
+    top: 900px;
+    background: linear-gradient(100deg, #FF6E7F, #BFE9FF);
+}
+
   
 .logo1 {
     padding-left: 4%;
+    z-index: 3;
 }
   
 .logo2 {
     padding-right: 4%;
+    z-index: 3;
 }
   
 .navi {
@@ -78,6 +89,27 @@ body {
     color: white;
 }
 
-  
+.glass-title {
+    background: rgba(53, 52, 52, 0.158);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-right: 80px;
+}
+.certificates {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.certificates img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
   
     

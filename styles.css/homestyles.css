@@ -35,10 +35,12 @@
   
   .logo1 {
     padding-left: 4%;
+    z-index: 3;
   }
   
   .logo2 {
     padding-right: 4%;
+    z-index: 3;
   }
   
   .navi {
