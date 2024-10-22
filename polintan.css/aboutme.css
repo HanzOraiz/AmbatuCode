@@ -1,0 +1,151 @@
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.circle1 {
+    width: 110px;
+    height: 110px;
+    top: 20%;
+    left: 20px;
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+}
+
+.circle2 {
+    width: 250px;
+    height: 250px;
+    bottom: 20px;
+    left: 40px;
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+}
+
+.circle3 {
+    width: 180px;
+    height: 180px;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(130deg, #EECDA3, #EF629F);
+}
+
+.circle4 {
+    width: 450px;
+    height: 450px;
+    right: 450px;
+    top: -50px;
+    background: linear-gradient(100deg, #FF6E7F, #BFE9FF);
+}
+
+.circle5 {
+    width: 450px;
+    height: 450px;
+    right: 450px;
+    top: 900px;
+    background: linear-gradient(100deg, #FF6E7F, #BFE9FF);
+}
+
+/* Logo Positioning */
+.logo1 {
+    padding-left: 4%;
+    z-index: 3;
+}
+
+.logo2 {
+    padding-right: 4%;
+    z-index: 3;
+}
+
+/* Navigation Bar Styling */
+.navi {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.navi ul {
+    font-size: 16px;
+    gap: 20px;
+}
+
+/* Background Title Styling */
+.glass-title {
+    background: rgba(53, 52, 52, 0.158);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* Left and Right Glass Containers */
+.glass-left {
+    background: rgba(53, 52, 52, 0.158);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 30px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.glass-education, .glass-experience {
+    background: rgba(53, 52, 52, 0.158);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 30px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* Highlighting Front and Graphic Designer with a specific color */
+.highlight-text {
+    color: #da6a9e;
+}
+
+/* Making 'and' smaller */
+.small-and {
+    font-size: 0.75em;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+/* Enlarging Philippines */
+.large-philippines {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Adjusting general h3 styles for position text */
+.position-text {
+    line-height: 1.4;
+}
+
+.certificates {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.certificates img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
