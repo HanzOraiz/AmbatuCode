@@ -45,7 +45,6 @@
     background: linear-gradient(100deg, #FF6E7F, #BFE9FF);
 }
 
-/* Logo Positioning */
 .logo1 {
     padding-left: 4%;
     z-index: 3;
@@ -56,7 +55,6 @@
     z-index: 3;
 }
 
-/* Navigation Bar Styling */
 .navi {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -72,7 +70,6 @@
     gap: 20px;
 }
 
-/* Background Title Styling */
 .glass-title {
     background: rgba(53, 52, 52, 0.158);
     backdrop-filter: blur(15px);
@@ -84,7 +81,6 @@
     z-index: 2;
 }
 
-/* Left and Right Glass Containers */
 .glass-left {
     background: rgba(53, 52, 52, 0.158);
     backdrop-filter: blur(15px);
@@ -114,25 +110,21 @@ body {
     color: white;
 }
 
-/* Highlighting Front and Graphic Designer with a specific color */
 .highlight-text {
     color: #da6a9e;
 }
 
-/* Making 'and' smaller */
 .small-and {
     font-size: 0.75em;
     font-weight: lighter;
     color: #ffffff;
 }
 
-/* Enlarging Philippines */
 .large-philippines {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-/* Adjusting general h3 styles for position text */
 .position-text {
     line-height: 1.4;
 }
