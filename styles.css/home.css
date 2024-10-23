@@ -402,7 +402,7 @@ body {
   font-size: 70px;
   top: 400px;
   position: relative;
-  padding-left: 50px;
+  padding-left: 600px;
 }
 
 .socmed {
@@ -676,14 +676,12 @@ body {
   }
 
   .photo {
-    width: 100%;
+    width: 110%;
     height: auto; /* Make image responsive */
     padding-bottom: 120px;
   }
   .con {
-    font-size: 18px;
-    position: relative;
-    top: 150px;
+    display: none;
   }
   .socmed {
     text-align: left;
