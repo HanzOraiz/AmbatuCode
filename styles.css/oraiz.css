@@ -14,7 +14,7 @@ body {
   position: fixed;
   left: 30px;
   top: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bakbak One', sans-serif;                                        
   font-size: 1.2em;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.3);
@@ -26,7 +26,7 @@ body {
       to(#222),
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
-  background-image: -webkit-linear-gradient(
+  background-image: -webkit-linear-gradient(  
     -40deg,
     transparent 0%,
     transparent 40%,
@@ -43,10 +43,10 @@ body {
 }
 .shine1 {
   position: fixed;
-  top: 8px;
-  left: 28px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.8em;
+  top: 14px;
+  left: 29px;
+  font-family: 'Bakbak One'. sans-serif;
+  font-size: 1.4em;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.3);
   background: #222 -webkit-gradient(
@@ -106,7 +106,7 @@ body {
 }
 
 .navbar ul li a {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #fff; /* Adjust color as needed */
@@ -186,7 +186,6 @@ header, .content > div {
     margin: 20px;
 }
 
-/* navbar */
 
 .profile-photo {
     width: 350px;
@@ -207,12 +206,14 @@ header, .content > div {
 }
 
 .text-content h1 {
+  font-family: 'Raleway', sans-serif;
     font-size: 2em;
     margin: 5px;
     color: #f6b511;
 }
 
 .text-content h2 {
+    font-family: 'Raleway', sans-serif;
     font-size: 1.7em;
     margin: 0;
     background: -webkit-linear-gradient( #f1e9e9, #454040f9);
@@ -224,7 +225,7 @@ header, .content > div {
     font-size: 0.9em;
     margin: 20px;
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Reddit Sans', sans-serif;
 }
 
 .scroll-1::-webkit-scrollbar {
@@ -781,6 +782,33 @@ textarea.form-input {
         flex-direction: column;
         align-items: center;
     }
+
+    .navbar {
+      position: fixed;
+      top: 11px;
+      left: 110px; /* Adjust as needed to align it beside the logo */
+      z-index: 1000;
+    }
+    
+    .navbar ul {
+      display: flex;
+      gap: 6px; /* Spacing between the menu items */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .navbar ul li a {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 900;
+      text-decoration: none;
+      color: #fff; /* Adjust color as needed */
+      font-size: 9px;
+      padding: 10px;
+      transition: color 0.3s;
+    }
+    
+
 
     .shine {
       position: fixed;
