@@ -201,7 +201,7 @@
   }
   
   .btn:hover {
-    background-color: var(--main-color);
+    background-color: var(--snd-bg-color);
     transform: translateY(-5px);
   }
   
@@ -220,8 +220,7 @@
   }
   
   .container .ball-1,
-  .container .ball-3,
-  .container .ball-4 {
+  .container .ball-3 {
     position: absolute;
     border-radius: 50%;
   }
@@ -237,12 +236,7 @@
     background: #ffc404;
     animation: move-small-3 12s infinite alternate;
   }
-  .container .ball-4 {
-    height: 50px;
-    width: 50px;
-    background: #c41e12;
-    animation: move-small-3 12s infinite alternate;
-  }
+
   @keyframes move-large-1 {
     0% {
         transform: translate(0, 0);
@@ -267,14 +261,6 @@
     40% { transform: translate(-200px, 0); } 
     60% { transform: translate(800px, 0); } 
     80% { transform: translate(150px, -150px); } 
-    100% { transform: translate(0, 0); } 
-  }
-  @keyframes move-small-2 {
-    0% { transform: translate(0, 0); }
-    20% { transform: translate(300px, 100px); } 
-    40% { transform: translate(800px, 0); } 
-    60% { transform: translate(0, 300px); } 
-    80% { transform: translate(250px, -100px); } 
     100% { transform: translate(0, 0); } 
   }
   @keyframes move-small-3 {
@@ -357,6 +343,8 @@
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     font-family: 'Bakbak One', sans-serif;
+    text-align: justify;
+    margin-top: 20px;
   }
   
   .skills .heading{
@@ -617,3 +605,84 @@
         font-size: 22px;
     }
   }
+
+  .shine {
+    position: fixed;
+    left: 30px;
+    top: 0;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.3);
+    background: #22222200;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #fff 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-size: 50px;
+    background-size: 50px;
+    -webkit-animation: zezzz 5s infinite;
+    animation: zezzz 5s infinite;
+    z-index: 10000;
+  }
+  
+  .shine1 {
+    position: fixed;
+    top: 14px;
+    left: 29px;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.3);
+    background: #22222200;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #fff 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-size: 50px;
+    background-size: 50px;
+    -webkit-animation: zezzz 5s infinite;
+    animation: zezzz 5s infinite;
+    z-index: 10000;
+  }
+  
+  @-webkit-keyframes zezzz {
+    0%, 10% {
+      background-position: -200px;
+    }
+    20% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 200px;
+    }
+  }
+  
+  @keyframes zezzz {
+    0%, 10% {
+      background-position: -200px;
+    }
+    20% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 200px;
+    }
+  }
+  
+
+
+
+  
