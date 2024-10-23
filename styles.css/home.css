@@ -1,0 +1,739 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #191A1E;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at 50% 50%, #ff4081, #ff9100);
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: -1;
+  animation: blob-move 6s ease-in-out infinite;
+}
+
+.blob-2 {
+  background: radial-gradient(circle at 50% 50%, #63d9c3, #1956da);
+  top: 20%;
+  left: 60%;
+}
+
+.blob-3 {
+  background: radial-gradient(circle at 50% 50%, #f3ff08, #2acf21);
+  top: 60%;
+  left: 20%;
+}
+
+
+@keyframes blob-move {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
+  }
+}
+
+.navbar {
+  position: absolute;
+  position: fixed;
+  top: 16px;
+  left: 150px;
+  z-index: 1000;
+  padding-right: 30px;
+  border-radius: 5px;
+  height: 7%;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 90px;                                    
+}
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: 'Reddit Sans', sans-serif;
+}
+
+.navbar ul li a:hover {
+  background: -webkit-linear-gradient( #ffffff, #3f35355d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.shine {
+  position: fixed;
+  left: 30px;
+  top: 0;
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.534);
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-size: 50px;
+  -webkit-animation: zezzz;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  z-index: 10000;
+}
+.shine1 {
+  position: fixed;
+  top: 10px;
+  left: 28px;
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.639);
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-size: 50px;
+  -webkit-animation: zezzz;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  z-index: 10000;
+}
+@-webkit-keyframes zezzz {
+  0%,
+  10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+.intro-text {
+  position: relative;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba(32, 32, 43, 0.19);
+  backdrop-filter: blur( 17px );
+  -webkit-backdrop-filter: blur( 17px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  top: 120px;
+  padding: 140px;
+}
+.ball1 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50;
+  background: #fff;
+  z-index: 0;
+}
+
+.intro-text h2, p, h3 {
+  position: relative;
+  right: 80px;
+  padding: 0;
+}
+
+.intro-text h3 {
+  font-family: 'Reddit Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.intro-text h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  margin: 0;
+  background: -webkit-linear-gradient( #ffffff, #e62626f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  font-family: 'Reddit Sans', sans-serif;
+  max-width: 400px;
+  margin: 10px 0;
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* From Uiverse.io by javierBarroso */ 
+.button {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  right: 80px;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: #e62626f9;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::after {
+  content: "Developers Portfolio";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: #fff;
+  width: 9px;
+  height: 21px;
+  transition: all 0.3s ease;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  padding: 12px 18px;
+  z-index: 2;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: left;
+}
+
+.button span {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e62626f9;
+}
+
+.button svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #e62626f9;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+.button:hover::after {
+  width: 100%;
+}
+
+.button:hover svg {
+  transform: translateX(0);
+  stroke: #fff;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+
+.team-logo img {
+  position: relative;
+  width: 500px;
+  height: auto;
+  bottom: 380px;
+  left: 600px;
+  background-color: none;
+}
+
+
+.portfolio-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 100px 20px;
+}
+
+
+
+
+.card {
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba(32, 32, 43, 0.19);
+  backdrop-filter: blur( 17px );
+  -webkit-backdrop-filter: blur( 17px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 31px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.team-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: none;
+}
+.team-photo img {
+
+  width: 220px;
+  border-radius: 50%;
+  justify-content: space-between;
+  margin: 50px 80px;
+  position: relative;
+  top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.name {
+  font-size: 15px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.role {
+  color: #f6b511;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* From Uiverse.io by sekaiking */ 
+.cta {
+  background-color: #fff;
+  color: #f6b511;
+  border-radius: 10em;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.cta:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 0px 10px 0 0 black;
+};
+
+.cta:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+
+.contact-section {
+  text-align: center;
+}
+
+.con {
+  font-family: 'Reddit Sans', sans-serif;
+  font-size: 70px;
+  top: 400px;
+  position: relative;
+  padding-left: 580px;
+}
+
+.socmed {
+  text-align: left;
+  background: none;
+  width: 50%;
+  position: relative;
+  left: 600px;
+  bottom: 490px;
+  color: #fefeff64;
+}
+
+.photo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 20%;
+  z-index: 0;
+  top: 100px;
+}
+
+/* From Uiverse.io by ahmed150up2 */ 
+.icon{
+  position: relative;
+  left: 540px;
+  bottom: 500px;
+  display: flex;
+  height: 50px;
+  width: 20%;
+  gap: 150px;
+}
+
+.icon svg {
+  position: absolute;
+  display: flex;
+  width: 80px;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.icon .social-link1,.icon .social-link2,.icon .social-link3,.icon .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.icon svg {
+  transform: scale(1);
+}
+
+.icon .social-link1:hover {
+  background-color: #1a1e22;
+  animation: bounce_613 0.4s linear;
+}
+
+.icon .social-link2:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.icon .social-link3:hover {
+  background-color: #0059f7;
+  animation: bounce_613 0.4s linear;
+}
+
+.icon .social-link4:hover {
+  background-color: #1d4292;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title {
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 35px;
+  top: 50px;
+  position: relative;
+  background: -webkit-linear-gradient( #ffffff, #e62626f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title1 {
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 35px;
+  top: 70px;
+  position: relative;
+  background: -webkit-linear-gradient( #ffffff, #e62626f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Default (Desktop) styles will be the existing ones. */
+
+/* Tablet styles (Portrait and Landscape) */
+@media screen and (max-width: 1024px) {
+  /* Adjust Navbar for tablets */
+  .navbar {
+    left: 30px; /* Move closer to the edge */
+    top: 20px;  /* Adjust top positioning */
+  }
+
+  .navbar ul {
+    gap: 30px; /* Reduce gap between navbar items */
+  }
+
+  .navbar ul li a {
+    font-size: 14px; /* Slightly reduce font size */
+  }
+
+  /* Intro text and other sections */
+  .intro-text {
+    padding: 80px; /* Reduce padding */
+    top: 100px;
+  }
+
+  .intro-text h2 {
+    font-size: 40px; /* Adjust the size of the heading */
+  }
+
+  .intro-text h3 {
+    font-size: 16px; /* Adjust subheading size */
+  }
+
+  .team-logo {
+    display: none; /* Hide logo on tablet to make space */
+  }
+
+  /* Portfolio cards on tablet */
+  .portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    gap: 20px;
+  }
+}
+
+/* Mobile Styles (Portrait and Landscape) */
+@media (max-width: 768px) {
+  /* Adjust Navbar for mobile */
+  .navbar {
+    position: fixed;
+    position: relative;
+    padding-right: 10px;
+    left: 150px;
+    top: 0;
+    z-index: 100000;
+    width: 205px;
+  }
+
+  .navbar ul {
+    display: flex; /* Stack the navbar vertically */
+    gap: 10px; /* Reduce the gap */
+    text-align: center;
+  }
+
+  .navbar ul li a{
+    font-size: 11px;
+  }
+
+  /* Adjust Intro Text and other sections */
+  .intro-text {
+    position: relative;
+    padding: 15px; /* Smaller padding on mobile */
+    top: 80px;
+    left: 10px;
+    width: 300px;
+  }
+  .team-logo img {
+    display: none;
+  }
+  .intro-text h3, h2, p {
+    position: relative;
+    left: 10px;
+    padding: 0px; 
+  } 
+
+  .intro-text h2 {
+    font-size: 25px; /* Smaller heading */
+  }
+
+  .intro-text h3 {
+    font-size: 10px; /* Adjust subheading size */
+  }
+  .intro-text p {
+    max-width: 200px;
+    font-size: 8px;
+  }
+  .button {
+    position: relative;
+    left: 15px;
+  }
+  .button:before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  .button::after {
+    content: "Developers Portfolio";
+    font-size: 12px;
+  }
+  .button span {
+    font-size: 12px;
+  }
+
+  .shine {
+    position: fixed;
+    font-size: 0.8em;
+    left: 20px;
+    top: 10px;
+  }
+  .shine1 {
+    position: fixed;
+    font-size: 1.2em;
+    left: 18.5px;
+    top: 19px;
+  }
+
+  /* Portfolio cards on mobile */
+  .portfolio-cards {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+    gap: 15px;
+  }
+
+  /* Contact Us Section */
+  .contact_us {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .icon {
+    left: 110px;
+    bottom: 220px;
+    gap: 40px;
+
+  }
+  .icon svg {
+    width: 15px;
+    z-index: 2;
+  }
+
+  .contact_us p {
+    font-size: 14px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto; /* Make image responsive */
+    padding-bottom: 120px;
+  }
+  .con {
+    font-size: 18px;
+    position: relative;
+    top: 150px;
+  }
+  .socmed {
+    text-align: left;
+    width: 200px;
+    position: relative;
+    left: 116px;
+    bottom: 235px;
+    font-weight: 100;
+    font-size: 8px;
+    background: none;
+  }
+  .team-photo img {
+    width: 150px;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 15px 10px;
+    position: relative;
+    top: 50px;
+  }
+  .card {
+    padding: 15px;
+    margin: 2px 15px;
+    justify-content: space-between;
+    position: relative;
+    top: 80px;
+  }
+  .title {
+    position: relative;
+    top: 150px;
+  }
+  .blob {
+    width: 200px;
+    height: 200px;
+    filter: blur(1px);
+  }
+
+  .blob-2 {
+    width: 180px;
+    height: 180px;
+    top: 5%;
+    left: 40%;
+  }
+
+  .blob-3 {
+    width: 180px;
+    height: 180px;
+    top: 70%;
+    left: 5%;
+  }
+
+}
+
+
