@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.content {
+    font-style: italic;
+    width: 450px;
+    height: 120px;
+}
+
+/* Glassmorphism background effect */
+.glass-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   /* background: rgba(255, 255, 255, 0.1); Semi-transparent white */
+    backdrop-filter: blur(20px); /* Blurs the background content behind */
+    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    z-index: -2; /* Places it behind everything */
+  
+}
+
+
+
+/* Gradient Circles */
+.gradient-circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1; /* Places the circles behind the content */
+}
+
+.circle1 {
+    width: 450px;
+    height: 400px;
+    background: linear-gradient(45deg, #FF6E6E, #A6E4FF);
+    top: -150px;
+    left: 550px;
+    opacity: 0.9; /* Optional: Adds a transparent effect */
+}
+
+.circle2 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #ece9e3, #ba4a4a);
+    bottom: 80px;
+    padding: 25px;
+    left: 1275px;
+    opacity: 0.6;
+}
+
+.circle3{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #ad65a1, #d77054);
+    bottom: 130px;
+    left:  50px;
+    opacity: 0.8;
+}
+
+.circle4{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(45deg, #FFD56E, #FF8E6E);
+    top: 250px;
+    left: 100px;
+    opacity: 0.8;
+
+}
+
+.content  {
+    background: rgba(255, 255, 255, 0.15); /* Transparent white */
+    backdrop-filter: blur(15px); /* Glassy effect on the card */
+    -webkit-backdrop-filter: blur(15px); /* For Safari */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left;
+    display: center;
+    margin-left: 0; 
+
+}
+.content .h2{
+    padding: 100px;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding-top: 15px;
+    height: auto;
+
+  }
+  
+  .logo {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    padding-top: 25px;
+    padding-left: 30px;
+  }
+
+
+  body {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+
+.section-title {
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    padding-left: 20px;
+    left: 150px;
+}
+
+
+.certificates img {
+    border-radius: 10px;
+    max-width: 49%;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.tools .tool {
+    margin: 15px;
+    text-align: center;
+}
+
+.tools .tool img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tools .tool img:hover {
+    transform: scale(1.1);
+}
+
+ 
