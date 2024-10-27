@@ -606,6 +606,12 @@ body {
     padding: 0px; 
   } 
 
+  .role {
+    font-size: 14px;
+    left: 2px;
+
+  }
+  
   .intro-text h2 {
     font-size: 25px; /* Smaller heading */
   }
